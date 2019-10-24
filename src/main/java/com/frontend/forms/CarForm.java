@@ -6,8 +6,6 @@ public class CarForm {
     private String brand;
     private String type;
 
-    private int id;
-
     public String getBrand() {
         return brand;
     }
@@ -22,13 +20,5 @@ public class CarForm {
 
     public void setType(String type) {
         this.type = type;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 }

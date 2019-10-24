@@ -59,13 +59,11 @@ public class MainController {
 
         String brand = carForm.getBrand();
         String type = carForm.getType();
-        int id = carForm.getId();
 
         if (brand != null && brand.length() > 0 &&
-            type != null && type.length() > 0 &&
-            id > 0) {
+            type != null && type.length() > 0) {
 
-            restTemplate.postForObject(api + "/create", new Car(brand, type, id), Car.class);
+            restTemplate.postForObject(api + "/create", new Car(brand, type), Car.class);
 
             return "redirect:/carList";
         }

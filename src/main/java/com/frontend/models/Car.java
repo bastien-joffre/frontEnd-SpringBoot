@@ -7,10 +7,9 @@ public class Car {
 
     public Car() {}
 
-    public Car(String brand, String type, int id) {
+    public Car(String brand, String type) {
         this.brand = brand;
         this.type = type;
-        this.id = id;
     }
 
     public String getBrand() {
